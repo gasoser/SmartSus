@@ -15,7 +15,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - Apagar
     - Atualizar
 
-### Cadastrar Usuario
+### Cadastrar usuario
 
 `POST` /smartsus/api/usuario
 
@@ -46,7 +46,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |201| o usuario foi cadastrado com sucesso
 |400| campos inválidos
 
-### Detalhes Despesa
+### Detalhes Conta
 
 `GET` smartsus/api/usuario/{id}
 
@@ -66,4 +66,26 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 | código | descrição 
 |--------|----------
 |200| os dados foram retornados
+|404| não foi encontrado usuario com esse ID
+
+### Apagar usuario
+
+`DELETE` smartsus/api/usuario/{id}
+
+*Exemplo de resposta*
+
+```js
+{
+    email: 'shaolin@gmail.com',
+    senha: 'aArFha251',
+    celular: '1199999-9999',
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|200| A conta foi apagada com sucesso
 |404| não foi encontrado usuario com esse ID
