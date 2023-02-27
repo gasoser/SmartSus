@@ -24,19 +24,16 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 | campo | tipo | obrigatório | descrição
 |-------|------|:-------------:|----------
 |email|texto|sim| E-mail para criar o cadastro
-|senha|texto|sim| Senha do usuário
-|contaId|inteiro|sim| o id de uma conta previamente cadastrada
-|descricao|texto|não| um texto sobre a despesa
+|senha|texto|sim| senha do usuário
+|celular|numero|sim| número de contato com o usuario
 
 *Exemplo de requisição*
 
 ```js
 {
-    valor: 100.59,
-    data: '2023-12-27',
-    contaId: 1,
-    categoriaId: 1,
-    descricao: 'cinema com os amigos'
+    email: '',
+    senha: '',
+    celular: '',
 }
 ```
 
