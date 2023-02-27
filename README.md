@@ -1,6 +1,6 @@
-# NaoFalindo
+# SmartSUS
 
-Uma API para o sistema de controle de gastos pessoais.
+API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo revolucionário que ajuda clientes a encontrar médicos próximos a preços justos. Com um simples toque no seu smartphone, você pode encontrar médicos qualificados e experientes que atendem perto de você, economizando tempo e dinheiro.
 
 ## Endpoints
 
