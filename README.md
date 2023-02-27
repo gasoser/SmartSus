@@ -6,8 +6,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 - Usuario
     - [Cadastrar](#cadastrar-usuario)
-    - Listar
-    - Atualizar
+    - [Listar](#listar-usuario)
+    - [Atualizar](#atualizar-usuario)
 - Cartao virtual
     - Cadastrar
     - Listar
