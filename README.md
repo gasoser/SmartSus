@@ -97,7 +97,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|202| os dados foram alterados com sucesso
+|200| os dados foram alterados com sucesso
 |400| campos invalidos para alteracao
 |404| não foi encontrado usuario com esse ID
 
