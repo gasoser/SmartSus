@@ -209,6 +209,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |data|data|sim| data marcada
 |agendamentoId|inteiro|sim| id do agendamento criado pelo sistema
 |usuarioId|inteiro|sim| id do usuario previamente criado
+|clinicaId|inteiro|sim| id da clinica previamente criada
 
 *Exemplo de requisição*
 
@@ -218,7 +219,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     preco: 98.99,
     data: '01/01/2024',
     agendamentoId: 1,
-    usuarioId: 1
+    usuarioId: 1,
+    clinicaId: 1
 }
 ```
 
@@ -241,7 +243,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     preco: 98.99,
     data: '01/01/2024',
     agendamentoId: 1,
-    usuarioId: 1
+    usuarioId: 1,
+    clinicaId: 1
 }
 ```
 
@@ -265,7 +268,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     preco: ,
     data: '',
     agendamentoId: 1,
-    usuarioId: 1
+    usuarioId: 1,
+    clinicaId: 1
 }
 ```
 
@@ -289,7 +293,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     preco: 120.99,
     data: '01/01/2025',
     agendamentoId: 1,
-    usuarioId: 1
+    usuarioId: 1,
+    clinicaId: 1
 }
 ```
 
