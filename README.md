@@ -6,20 +6,20 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 - Usuario
     - [Cadastrar](#cadastrar-usuario)
-    - Listar todos
+    - Listar
     - Atualizar
 - Cartao virtual
     - Cadastrar
-    - Listar todos
+    - Listar
     - Apagar
 - Agendamento
     - Cadastrar
-    - Listar todos
+    - Listar
     - Apagar
     - Atualizar
 - Clínica
     - Cadastrar
-    - Listar todas
+    - Listar
     - Apagar
     - Atualizar
 
