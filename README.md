@@ -68,24 +68,3 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |200| os dados foram retornados
 |404| não foi encontrado usuario com esse ID
 
-### Apagar usuario
-
-`DELETE` smartsus/api/usuario/{id}
-
-*Exemplo de resposta*
-
-```js
-{
-    email: '',
-    senha: '',
-    celular: '',
-    usuarioId: 1
-}
-```
-
-*Resposta*
-
-| código | descrição 
-|--------|----------
-|200| A conta foi apagada com sucesso
-|404| não foi encontrado usuario com esse ID
