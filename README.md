@@ -135,5 +135,5 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|201| o usuario foi cadastrado com sucesso
+|201| o cartao foi cadastrado com sucesso
 |400| campos inválidos
