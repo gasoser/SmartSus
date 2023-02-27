@@ -67,7 +67,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |200| os dados foram retornados
 |404| não foi encontrado usuario com esse ID
 
-### Alterar dados da conta
+### Atualizar dados da conta
 
 `PATCH` smartsus/api/usuario/{id}
 
