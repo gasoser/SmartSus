@@ -117,6 +117,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |cvv|inteiro|sim| digito do cartao
 |cpf|texto|sim| cpf do titular
 |usuarioId|inteiro|sim| id do usuario previamente criado
+|cartaoId|inteiro|sim| id do cartao criado pelo sistema
 
 *Exemplo de requisição*
 
@@ -127,7 +128,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     validade: '01/27',
     cvv: 123,
     cpf: '123.456.789-10',
-    usuarioId: 1
+    usuarioId: 1,
+    cartaoId: 1
 }
 ```
 
@@ -151,7 +153,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     validade: '01/27',
     cvv: 123,
     cpf: '123.456.789-10',
-    usuarioId: 1
+    usuarioId: 1,
+    cartaoId: 1
 }
 ```
 
@@ -176,7 +179,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     validade: '01/27',
     cvv: 123,
     cpf: '123.456.789-10',
-    usuarioId: 1
+    usuarioId: 1,
+    cartaoId: 1
 }
 ```
 
