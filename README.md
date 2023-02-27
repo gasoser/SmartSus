@@ -3,7 +3,11 @@
 API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo revolucionário que ajuda clientes a encontrar médicos próximos a preços justos. Com um simples toque no seu smartphone, você pode encontrar médicos qualificados e experientes que atendem perto de você, economizando tempo e dinheiro.
 
 ## Endpoints
-
+- Clínica
+    - [Cadastrar](#cadastrar-clinica)
+    - [Listar](#listar-clinica)
+    - [Apagar](#apagar-clinica)
+    - [Atualizar](#atualizar-clinica)
 - Usuario
     - [Cadastrar](#cadastrar-usuario)
     - [Listar](#listar-usuario)
@@ -17,11 +21,116 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - [Listar](#listar-agendamento)
     - [Apagar](#apagar-agendamento)
     - [Atualizar](#atualizar-agendamento)
-- Clínica
-    - [Cadastrar](#cadastrar-clinica)
-    - [Listar](#listar-clinica)
-    - [Apagar](#apagar-clinica)
-    - [Atualizar](#atualizar-clinica)
+
+
+--------------------------------------------
+
+
+### Cadastrar clinica
+
+`POST` /smartsus/api/clinica
+
+*Campos de requisição*
+
+| campo | tipo | obrigatório | descrição
+|-------|------|:-------------:|----------
+|nome|texto|sim| nome da clinica
+|especialidade|texto|sim| especialidade da clinica
+|cnpj|texto|sim| cnpj da clinica
+|preco|texto|sim| preco da consulta
+|clinicaId|inteiro|sim| id da clinica criada pelo sistema
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cardiologista',
+    cnpj: '61.282.051/0001-48',
+    preco: 98.99,
+    clinicaId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| a clinica foi cadastrada com sucesso
+|400| campos inválidos
+
+### Listar clinica
+
+`GET` /smartsus/api/clinica/{id}
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cardiologista',
+    cnpj: '61.282.051/0001-48',
+    preco: 98.99,
+    clinicaId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|200| a clinica foi cadastrada com sucesso
+|404| nao foi encontrada uma clinica com esse id
+
+### Apagar clinica
+
+`DELETE` /smartsus/api/clinica/{id}
+
+
+*Exemplo de resposta*
+
+```js
+{
+    nome: '',
+    especialidade: '',
+    cnpj: '',
+    preco: ,
+    clinicaId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|204| a clinica foi apagada com sucesso
+|404| nao foi encontrado uma clinica com esse id
+
+### Atualizar clinica
+
+`PUT` /smartsus/api/clinica/{id}
+
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cirurgiao geral',
+    cnpj: '61.282.051/0001-48',
+    preco: 209.99,
+    clinicaId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|200| os dados foram alterados com sucesso
+|400| campos invalidos para alteracao
+|404| não foi encontrada clinica com esse ID
+
 
 --------------------------------------------
 
@@ -307,108 +416,3 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |404| não foi encontrado agendamento com esse ID
 
 --------------------------------------------
-
-### Cadastrar clinica
-
-`POST` /smartsus/api/clinica
-
-*Campos de requisição*
-
-| campo | tipo | obrigatório | descrição
-|-------|------|:-------------:|----------
-|nome|texto|sim| nome da clinica
-|especialidade|texto|sim| especialidade da clinica
-|cnpj|texto|sim| cnpj da clinica
-|preco|texto|sim| preco da consulta
-|clinicaId|inteiro|sim| id da clinica criada pelo sistema
-
-*Exemplo de requisição*
-
-```js
-{
-    nome: 'FIAP CLINICA',
-    especialidade: 'cardiologista',
-    cnpj: '61.282.051/0001-48',
-    preco: 98.99,
-    clinicaId: 1
-}
-```
-
-*Resposta*
-
-| código | descrição 
-|--------|----------
-|201| o agendamento foi cadastrado com sucesso
-|400| campos inválidos
-
-### Listar clinica
-
-`GET` /smartsus/api/clinica/{id}
-
-*Exemplo de requisição*
-
-```js
-{
-    nome: 'FIAP CLINICA',
-    especialidade: 'cardiologista',
-    cnpj: '61.282.051/0001-48',
-    preco: 98.99,
-    clinicaId: 1
-}
-```
-
-*Resposta*
-
-| código | descrição 
-|--------|----------
-|200| o agendamento foi cadastrado com sucesso
-|404| nao foi encontrado um agendamento com esse id
-
-### Apagar clinica
-
-`DELETE` /smartsus/api/clinica/{id}
-
-
-*Exemplo de resposta*
-
-```js
-{
-    nome: '',
-    especialidade: '',
-    cnpj: '',
-    preco: ,
-    clinicaId: 1
-}
-```
-
-*Resposta*
-
-| código | descrição 
-|--------|----------
-|204| o agendamento foi apagado com sucesso
-|404| nao foi encontrado um agendamento com esse id
-
-### Atualizar clinica
-
-`PUT` /smartsus/api/clinica/{id}
-
-
-*Exemplo de requisição*
-
-```js
-{
-    nome: 'FIAP CLINICA',
-    especialidade: 'cirurgiao geral',
-    cnpj: '61.282.051/0001-48',
-    preco: 209.99,
-    clinicaId: 1
-}
-```
-
-*Resposta*
-
-| código | descrição 
-|--------|----------
-|200| os dados foram alterados com sucesso
-|400| campos invalidos para alteracao
-|404| não foi encontrado agendamento com esse ID
