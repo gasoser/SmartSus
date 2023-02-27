@@ -165,7 +165,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 | código | descrição 
 |--------|----------
 |200| o cartao foi cadastrado com sucesso
-|400| campos inválidos
+|404| nao foi encontrado um cartao com esse id
 
 
 ### Apagar cartao
@@ -191,7 +191,44 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 | código | descrição 
 |--------|----------
 |204| o cartao foi apagado com sucesso
-|400| campos inválidos
+|404| nao foi encontrado um cartao com esse id
 
 
 --------------------------------------------
+
+### Cadastrar agendamento
+
+`POST` /smartsus/api/agendamento
+
+*Campos de requisição*
+
+| campo | tipo | obrigatório | descrição
+|-------|------|:-------------:|----------
+|nome|texto|sim| nome da clinica
+|especialidade|texto|sim| especialidade da clinica
+|cnpj|texto|sim| cnpj da clinica
+|preco|texto|sim| preco da consulta
+|data|data|sim| data marcada
+|agendamentoId|inteiro|sim| id do agendamento criado pelo sistema
+|usuarioId|inteiro|sim| id do usuario previamente criado
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cardiologista',
+    cnpj: '61.282.051/0001-48',
+    preco: 98.99,
+    data: '01/01/2024',
+    agendamentoId: 1,
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o agendamento foi cadastrado com sucesso
+|400| campos inválidos
