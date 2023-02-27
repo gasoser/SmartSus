@@ -232,3 +232,80 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |--------|----------
 |201| o agendamento foi cadastrado com sucesso
 |400| campos inválidos
+
+### Listar agendamento
+
+`GET` /smartsus/api/agendamento/{id}
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cardiologista',
+    cnpj: '61.282.051/0001-48',
+    preco: 98.99,
+    data: '01/01/2024',
+    agendamentoId: 1,
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o agendamento foi cadastrado com sucesso
+|400| campos inválidos
+
+### Apagar agendamento
+
+`DELETE` /smartsus/api/agendamento/{id}
+
+
+*Exemplo de resposta*
+
+```js
+{
+    nome: '',
+    especialidade: '',
+    cnpj: '',
+    preco: ,
+    data: '',
+    agendamentoId: 1,
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o agendamento foi cadastrado com sucesso
+|400| campos inválidos
+
+### Atualizar agendamento
+
+`PUT` /smartsus/api/agendamento/{id}
+
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'urologista',
+    cnpj: '61.282.051/0001-48',
+    preco: 120.99,
+    data: '01/01/2025',
+    agendamentoId: 1,
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o agendamento foi cadastrado com sucesso
+|400| campos inválidos
