@@ -142,17 +142,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 `GET` /smartsus/api/cartao/{id}
 
-*Campos de requisição*
-
-| campo | tipo | obrigatório | descrição
-|-------|------|:-------------:|----------
-|numero|inteiro|sim| numero do cartao
-|nome|texto|sim| nome do cartao
-|validade|data|sim| validade do cartao
-|cvv|inteiro|sim| digito do cartao
-|cpf|texto|sim| cpf do titular
-|usuarioId|inteiro|sim| id do usuario previamente criado
-
 *Exemplo de resposta*
 
 ```js
@@ -178,17 +167,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 `DELETE` /smartsus/api/cartao/{id}
 
-*Campos de requisição*
-
-| campo | tipo | obrigatório | descrição
-|-------|------|:-------------:|----------
-|numero|inteiro|sim| numero do cartao
-|nome|texto|sim| nome do cartao
-|validade|data|sim| validade do cartao
-|cvv|inteiro|sim| digito do cartao
-|cpf|texto|sim| cpf do titular
-|usuarioId|inteiro|sim| id do usuario previamente criado
-
 *Exemplo de requisição*
 
 ```js
@@ -206,5 +184,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|201| o cartao foi cadastrado com sucesso
+|201| o cartao foi apagado com sucesso
 |400| campos inválidos
+
+
+--------------------------------------------
