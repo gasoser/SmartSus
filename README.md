@@ -4,7 +4,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ## Endpoints
 
-- Login
+- Conta
     - [Cadastrar](#cadastrar-despesa)
     - Listar todas
     - Apagar
