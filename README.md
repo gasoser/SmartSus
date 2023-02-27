@@ -34,7 +34,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |email|texto|sim| e-mail para criar o cadastro
 |senha|texto|sim| senha do usuário
 |celular|texto|sim| número de contato com o usuario
-|usuarioId|inteiro|sim| 
+|usuarioId|inteiro|sim| id do usuario criado pelo sistema
 
 *Exemplo de requisição*
 
