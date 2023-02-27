@@ -4,7 +4,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ## Endpoints
 
-- Conta
+- Usuario
     - [Cadastrar](#cadastrar-despesa)
     - Listar todas
     - Apagar
@@ -17,9 +17,9 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - Atualizar
     - Detalhes
 
-### Cadastrar Despesa
+### Cadastrar Usuario
 
-`POST` /naofalindo/api/despesa
+`POST` /smartsus/api/usuario
 
 *Campos de requisição*
 
