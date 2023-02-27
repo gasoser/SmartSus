@@ -80,7 +80,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ### Atualizar dados da conta
 
-`PATCH` smartsus/api/usuario/{id}
+`PUT` smartsus/api/usuario/{id}
 
 *Exemplo de requisição*
 
@@ -97,7 +97,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|200| os dados foram alterados com sucesso
+|202| os dados foram alterados com sucesso
 |400| campos invalidos para alteracao
 |404| não foi encontrado usuario com esse ID
 
@@ -164,7 +164,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|201| o cartao foi cadastrado com sucesso
+|200| o cartao foi cadastrado com sucesso
 |400| campos inválidos
 
 
@@ -172,15 +172,15 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 `DELETE` /smartsus/api/cartao/{id}
 
-*Exemplo de requisição*
+*Exemplo de resposta*
 
 ```js
 {
-    numero: 1234 5678 1234 5678,
-    nome: 'Carthanos',
-    validade: '01/27',
-    cvv: 123,
-    cpf: '123.456.789-10',
+    numero: ,
+    nome: '',
+    validade: '',
+    cvv: ,
+    cpf: '',
     usuarioId: 1,
     cartaoId: 1
 }
@@ -190,7 +190,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|201| o cartao foi apagado com sucesso
+|204| o cartao foi apagado com sucesso
 |400| campos inválidos
 
 
