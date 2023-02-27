@@ -7,7 +7,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 - Usuario
     - [Cadastrar](#cadastrar-despesa)
     - Listar todos
-    - Apagar
     - Atualizar
 - Clínica
     - Cadastrar
