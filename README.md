@@ -10,7 +10,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - Apagar
     - Atualizar
     - [Detalhes](#detalhes-despesa)
-- Receitas
+- Clínica
     - Cadastrar
     - Listar todas
     - Apagar
