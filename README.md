@@ -55,8 +55,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 {
     email: 'shaolin@gmail.com',
     senha: 'aArFha251',
-    celular: '1199999-9999',
-    usuarioId: 1
+    celular: '1199999-9999'
 }
 ```
 
