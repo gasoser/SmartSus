@@ -25,7 +25,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |-------|------|:-------------:|----------
 |email|texto|sim| E-mail para criar o cadastro
 |senha|texto|sim| senha do usuário
-|celular|numero|sim| número de contato com o usuario
+|celular|texto|sim| número de contato com o usuario
+|usuarioId|numero|sim| 
 
 *Exemplo de requisição*
 
@@ -33,7 +34,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 {
     email: 'shaolin@gmail.com',
     senha: 'aArFha251',
-    celular: '1199999-9999',
+    celular: '(11)9 9999-9999',
+    usuarioId: 1
 }
 ```
 
@@ -52,11 +54,10 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ```js
 {
-    valor: 100.59,
-    data: '2023-12-27',
-    contaId: 1,
-    categoriaId: 1,
-    descricao: 'cinema com os amigos'
+    email: 'shaolin@gmail.com',
+    senha: 'aArFha251',
+    celular: '1199999-9999',
+    usuarioId: 1
 }
 ```
 
@@ -65,4 +66,4 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 | código | descrição 
 |--------|----------
 |200| os dados foram retornados
-|404| não foi encontrada despesa com esse ID
+|404| não foi encontrado usuario com esse ID
