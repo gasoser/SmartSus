@@ -18,10 +18,10 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - [Apagar](#apagar-agendamento)
     - [Atualizar](#atualizar-agendamento)
 - Clínica
-    - [Cadastrar]
-    - [Listar]
-    - [Apagar]
-    - [Atualizar]
+    - [Cadastrar](#cadastrar-clinica)
+    - [Listar](#listar-clinica)
+    - [Apagar](#apagar-clinica)
+    - [Atualizar](#atualizar-clinica)
 
 --------------------------------------------
 
@@ -205,8 +205,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 | campo | tipo | obrigatório | descrição
 |-------|------|:-------------:|----------
 |nome|texto|sim| nome da clinica
-|especialidade|texto|sim| especialidade da clinica
-|cnpj|texto|sim| cnpj da clinica
 |preco|texto|sim| preco da consulta
 |data|data|sim| data marcada
 |agendamentoId|inteiro|sim| id do agendamento criado pelo sistema
@@ -217,8 +215,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 ```js
 {
     nome: 'FIAP CLINICA',
-    especialidade: 'cardiologista',
-    cnpj: '61.282.051/0001-48',
     preco: 98.99,
     data: '01/01/2024',
     agendamentoId: 1,
@@ -242,8 +238,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 ```js
 {
     nome: 'FIAP CLINICA',
-    especialidade: 'cardiologista',
-    cnpj: '61.282.051/0001-48',
     preco: 98.99,
     data: '01/01/2024',
     agendamentoId: 1,
@@ -268,8 +262,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 ```js
 {
     nome: '',
-    especialidade: '',
-    cnpj: '',
     preco: ,
     data: '',
     agendamentoId: 1,
@@ -294,12 +286,117 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 ```js
 {
     nome: 'FIAP CLINICA',
-    especialidade: 'urologista',
-    cnpj: '61.282.051/0001-48',
     preco: 120.99,
     data: '01/01/2025',
     agendamentoId: 1,
     usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|200| os dados foram alterados com sucesso
+|400| campos invalidos para alteracao
+|404| não foi encontrado agendamento com esse ID
+
+--------------------------------------------
+
+### Cadastrar clinica
+
+`POST` /smartsus/api/clinica
+
+*Campos de requisição*
+
+| campo | tipo | obrigatório | descrição
+|-------|------|:-------------:|----------
+|nome|texto|sim| nome da clinica
+|especialidade|texto|sim| especialidade da clinica
+|cnpj|texto|sim| cnpj da clinica
+|preco|texto|sim| preco da consulta
+|clinicaId|inteiro|sim| id da clinica criada pelo sistema
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cardiologista',
+    cnpj: '61.282.051/0001-48',
+    preco: 98.99,
+    clinicaId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o agendamento foi cadastrado com sucesso
+|400| campos inválidos
+
+### Listar clinica
+
+`GET` /smartsus/api/clinica/{id}
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cardiologista',
+    cnpj: '61.282.051/0001-48',
+    preco: 98.99,
+    clinicaId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|200| o agendamento foi cadastrado com sucesso
+|404| nao foi encontrado um agendamento com esse id
+
+### Apagar clinica
+
+`DELETE` /smartsus/api/clinica/{id}
+
+
+*Exemplo de resposta*
+
+```js
+{
+    nome: '',
+    especialidade: '',
+    cnpj: '',
+    preco: ,
+    clinicaId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|204| o agendamento foi apagado com sucesso
+|404| nao foi encontrado um agendamento com esse id
+
+### Atualizar clinica
+
+`PUT` /smartsus/api/clinica/{id}
+
+
+*Exemplo de requisição*
+
+```js
+{
+    nome: 'FIAP CLINICA',
+    especialidade: 'cirurgiao geral',
+    cnpj: '61.282.051/0001-48',
+    preco: 209.99,
+    clinicaId: 1
 }
 ```
 
