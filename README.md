@@ -5,7 +5,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 ## Endpoints
 
 - Usuario
-    - [Cadastrar](#cadastrar-despesa)
+    - [Cadastrar](#cadastrar-usuario)
     - Listar todos
     - Atualizar
 - Cartao virtual
