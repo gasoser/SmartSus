@@ -25,10 +25,9 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | campo | tipo | obrigatório | descrição
 |-------|------|:-------------:|----------
-|valor|decimal positivo|sim| o valor da despesa
-|data|data|sim| a data da despesa
+|email|texto|sim| E-mail para criar o cadastro
+|senha|texto|sim| Senha do usuário
 |contaId|inteiro|sim| o id de uma conta previamente cadastrada
-|categoriaId|inteiro|sim| o id de uma categoria previamente cadastrada
 |descricao|texto|não| um texto sobre a despesa
 
 *Exemplo de requisição*
