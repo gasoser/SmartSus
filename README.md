@@ -23,6 +23,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - Apagar
     - Atualizar
 
+--------------------------------------------
+
 ### Cadastrar usuario
 
 `POST` /smartsus/api/usuario
