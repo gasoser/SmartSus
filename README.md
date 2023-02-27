@@ -103,18 +103,20 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 --------------------------------------------
 
 
-### Cadastrar usuario
+### Cadastrar cartao
 
-`POST` /smartsus/api/usuario
+`POST` /smartsus/api/cartao/{id}
 
 *Campos de requisição*
 
 | campo | tipo | obrigatório | descrição
 |-------|------|:-------------:|----------
-|email|texto|sim| e-mail para criar o cadastro
-|senha|texto|sim| senha do usuário
-|celular|texto|sim| número de contato com o usuario
-|usuarioId|inteiro|sim| id do usuario criado pelo sistema
+|numero|texto|sim| numero do cartao
+|nome|texto|sim| nome do cartao
+|validade|texto|sim| validade do cartao
+|cvv|texto|sim| digito do cartao
+|cpf|texto|sim| cpf do titular
+|usuarioId|inteiro|sim| id do usuario previamente criado
 
 *Exemplo de requisição*
 
