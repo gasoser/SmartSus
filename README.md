@@ -56,7 +56,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |201| o usuario foi cadastrado com sucesso
 |400| campos inválidos
 
-### Detalhes Conta
+### Listar conta
 
 `GET` smartsus/api/usuario/{id}
 
