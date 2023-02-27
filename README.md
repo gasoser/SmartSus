@@ -111,10 +111,10 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | campo | tipo | obrigatório | descrição
 |-------|------|:-------------:|----------
-|numero|texto|sim| numero do cartao
+|numero|inteiro|sim| numero do cartao
 |nome|texto|sim| nome do cartao
-|validade|texto|sim| validade do cartao
-|cvv|texto|sim| digito do cartao
+|validade|data|sim| validade do cartao
+|cvv|inteiro|sim| digito do cartao
 |cpf|texto|sim| cpf do titular
 |usuarioId|inteiro|sim| id do usuario previamente criado
 
@@ -122,9 +122,11 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ```js
 {
-    email: 'shaolin@gmail.com',
-    senha: 'aArFha251',
-    celular: '(11)9 9999-9999',
+    numero: 1234 5678 1234 5678,
+    nome: 'Carthanos',
+    validade: '01/27',
+    cvv: 123,
+    cpf: '123.456.789-10',
     usuarioId: 1
 }
 ```
