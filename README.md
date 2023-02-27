@@ -255,8 +255,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|201| o agendamento foi cadastrado com sucesso
-|400| campos inválidos
+|200| o agendamento foi cadastrado com sucesso
+|404| nao foi encontrado um agendamento com esse id
 
 ### Apagar agendamento
 
@@ -281,8 +281,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|201| o agendamento foi cadastrado com sucesso
-|400| campos inválidos
+|204| o agendamento foi apagado com sucesso
+|404| nao foi encontrado um agendamento com esse id
 
 ### Atualizar agendamento
 
@@ -307,5 +307,6 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | código | descrição 
 |--------|----------
-|201| o agendamento foi cadastrado com sucesso
-|400| campos inválidos
+|200| os dados foram alterados com sucesso
+|400| campos invalidos para alteracao
+|404| não foi encontrado agendamento com esse ID
