@@ -9,19 +9,19 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - [Listar](#listar-usuario)
     - [Atualizar](#atualizar-usuario)
 - Cartao virtual
-    - Cadastrar
-    - Listar
-    - Apagar
+    - [Cadastrar](#cadastrar-cartao)
+    - [Listar](#listar-cartao)
+    - [Apagar](#apagar-cartao)
 - Agendamento
-    - Cadastrar
-    - Listar
-    - Apagar
-    - Atualizar
+    - [Cadastrar](#cadastrar-agendamento)
+    - [Listar](#listar-agendamento)
+    - [Apagar](#apagar-agendamento)
+    - [Atualizar](#atualizar-agendamento)
 - Clínica
-    - Cadastrar
-    - Listar
-    - Apagar
-    - Atualizar
+    - [Cadastrar]
+    - [Listar]
+    - [Apagar]
+    - [Atualizar]
 
 --------------------------------------------
 
