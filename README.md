@@ -63,7 +63,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 `GET` /smartsus/api/clinica/{id}
 
-*Exemplo de requisição*
+*Exemplo de resposta*
 
 ```js
 {
@@ -344,7 +344,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 `GET` /smartsus/api/agendamento/{id}
 
-*Exemplo de requisição*
+*Exemplo de resposta*
 
 ```js
 {
