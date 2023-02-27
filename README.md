@@ -105,7 +105,78 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ### Cadastrar cartao
 
-`POST` /smartsus/api/cartao/{id}
+`POST` /smartsus/api/cartao
+
+*Campos de requisição*
+
+| campo | tipo | obrigatório | descrição
+|-------|------|:-------------:|----------
+|numero|inteiro|sim| numero do cartao
+|nome|texto|sim| nome do cartao
+|validade|data|sim| validade do cartao
+|cvv|inteiro|sim| digito do cartao
+|cpf|texto|sim| cpf do titular
+|usuarioId|inteiro|sim| id do usuario previamente criado
+
+*Exemplo de requisição*
+
+```js
+{
+    numero: 1234 5678 1234 5678,
+    nome: 'Carthanos',
+    validade: '01/27',
+    cvv: 123,
+    cpf: '123.456.789-10',
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o cartao foi cadastrado com sucesso
+|400| campos inválidos
+
+### Listar cartao
+
+`GET` /smartsus/api/cartao/{id}
+
+*Campos de requisição*
+
+| campo | tipo | obrigatório | descrição
+|-------|------|:-------------:|----------
+|numero|inteiro|sim| numero do cartao
+|nome|texto|sim| nome do cartao
+|validade|data|sim| validade do cartao
+|cvv|inteiro|sim| digito do cartao
+|cpf|texto|sim| cpf do titular
+|usuarioId|inteiro|sim| id do usuario previamente criado
+
+*Exemplo de resposta*
+
+```js
+{
+    numero: 1234 5678 1234 5678,
+    nome: 'Carthanos',
+    validade: '01/27',
+    cvv: 123,
+    cpf: '123.456.789-10',
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o cartao foi cadastrado com sucesso
+|400| campos inválidos
+
+
+### Apagar cartao
+
+`DELETE` /smartsus/api/cartao/{id}
 
 *Campos de requisição*
 
