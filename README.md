@@ -9,13 +9,11 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
     - Listar todas
     - Apagar
     - Atualizar
-    - [Detalhes](#detalhes-despesa)
 - Clínica
     - Cadastrar
     - Listar todas
     - Apagar
     - Atualizar
-    - Detalhes
 
 ### Cadastrar Usuario
 
