@@ -71,7 +71,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 `PATCH` smartsus/api/usuario/{id}
 
-*Exemplo de resposta*
+*Exemplo de requisição*
 
 ```js
 {
