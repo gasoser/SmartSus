@@ -64,7 +64,8 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 {
     email: 'shaolin@gmail.com',
     senha: 'aArFha251',
-    celular: '1199999-9999'
+    celular: '1199999-9999',
+    usuarioId: 1
 }
 ```
 
@@ -97,3 +98,38 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 |200| os dados foram alterados com sucesso
 |400| campos invalidos para alteracao
 |404| não foi encontrado usuario com esse ID
+
+
+--------------------------------------------
+
+
+### Cadastrar usuario
+
+`POST` /smartsus/api/usuario
+
+*Campos de requisição*
+
+| campo | tipo | obrigatório | descrição
+|-------|------|:-------------:|----------
+|email|texto|sim| e-mail para criar o cadastro
+|senha|texto|sim| senha do usuário
+|celular|texto|sim| número de contato com o usuario
+|usuarioId|inteiro|sim| id do usuario criado pelo sistema
+
+*Exemplo de requisição*
+
+```js
+{
+    email: 'shaolin@gmail.com',
+    senha: 'aArFha251',
+    celular: '(11)9 9999-9999',
+    usuarioId: 1
+}
+```
+
+*Resposta*
+
+| código | descrição 
+|--------|----------
+|201| o usuario foi cadastrado com sucesso
+|400| campos inválidos
