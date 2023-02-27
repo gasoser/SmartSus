@@ -4,7 +4,7 @@ Uma API para o sistema de controle de gastos pessoais.
 
 ## Endpoints
 
-- Despesas
+- Despesa
     - [Cadastrar](#cadastrar-despesa)
     - Listar todas
     - Apagar
