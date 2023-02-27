@@ -113,7 +113,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 | campo | tipo | obrigatório | descrição
 |-------|------|:-------------:|----------
-|numero|inteiro|sim| numero do cartao
+|numero|texto|sim| numero do cartao
 |nome|texto|sim| nome do cartao
 |validade|data|sim| validade do cartao
 |cvv|inteiro|sim| digito do cartao
@@ -125,7 +125,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ```js
 {
-    numero: 1234 5678 1234 5678,
+    numero: '1234 5678 1234 5678',
     nome: 'Carthanos',
     validade: '01/27',
     cvv: 123,
@@ -150,7 +150,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ```js
 {
-    numero: 1234 5678 1234 5678,
+    numero: '1234 5678 1234 5678',
     nome: 'Carthanos',
     validade: '01/27',
     cvv: 123,
@@ -176,7 +176,7 @@ API Designada para o sistema de controle do aplicativo SmartSus, um aplicativo r
 
 ```js
 {
-    numero: ,
+    numero: '',
     nome: '',
     validade: '',
     cvv: ,
